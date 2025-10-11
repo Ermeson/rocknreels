@@ -45,7 +45,7 @@ const Problem = () => {
           
           <Button variant="outline" size="lg" className="text-lg">
             QUERO PARAR DE PERDER RELEVÂNCIA
-            <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto" />
+            <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto rotate-[15deg]" />
           </Button>
         </div>
       </div>

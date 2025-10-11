@@ -31,7 +31,7 @@ const FinalCTA = () => {
           <div className="pt-8">
             <Button variant="hero" size="lg" className="text-xl px-12 py-8">
               ENTRAR EM CONTATO AGORA
-              <img src={iconeRosa} alt="" className="ml-3 w-8 h-auto" />
+              <img src={iconeRosa} alt="" className="ml-3 w-8 h-auto rotate-[15deg]" />
             </Button>
           </div>
         </div>

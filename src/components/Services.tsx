@@ -52,7 +52,7 @@ const Services = () => {
         <div className="text-center">
           <Button variant="default" size="lg" className="text-lg">
             ENTRAR EM CONTATO
-            <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto" />
+            <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto rotate-[15deg]" />
           </Button>
         </div>
       </div>

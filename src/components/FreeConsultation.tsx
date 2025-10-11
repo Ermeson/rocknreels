@@ -42,7 +42,7 @@ const FreeConsultation = () => {
             {/* CTA Button */}
             <Button variant="hero" size="lg" className="text-lg px-10 py-7 text-xl">
               AGENDAR MINHA CONSULTORIA GRATUITA
-              <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto" />
+              <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto rotate-[15deg]" />
             </Button>
             
             {/* Zero Risk Section */}
@@ -59,7 +59,7 @@ const FreeConsultation = () => {
             {/* Secondary CTA */}
             <Button variant="secondary" size="lg" className="text-lg">
               EU QUERO
-              <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto" />
+              <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto rotate-[15deg]" />
             </Button>
           </div>
         </div>

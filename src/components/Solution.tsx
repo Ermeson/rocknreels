@@ -62,7 +62,7 @@ const Solution = () => {
           
           <Button variant="secondary" size="lg" className="text-lg">
             QUERO ACELERAR MINHA COMUNICAÇÃO
-            <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto" />
+            <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto rotate-[15deg]" />
           </Button>
         </div>
       </div>
