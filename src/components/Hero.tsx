@@ -6,7 +6,7 @@ import { useTypewriter } from "@/hooks/useTypewriter";
 import { useState } from "react";
 const Hero = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
-  const { displayedText } = useTypewriter("São SOBRE PRESENÇA, POSICIONAMENTO E PODER DE MARCA!", 50);
+  const { displayedText } = useTypewriter("SÃO SOBRE PRESENÇA, POSICIONAMENTO E PODER DE MARCA!", 50);
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
       {/* Gradient Background Effect */}
