@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import logo from "@/assets/logo-principal-branca.png";
+import iconeRosa from "@/assets/icone-rosa.png";
 import { useTypewriter } from "@/hooks/useTypewriter";
 const Hero = () => {
   const { displayedText } = useTypewriter("SÃO SOBRE PRESENÇA, POSICIONAMENTO E PODER DE MARCA!", 50);
@@ -36,7 +36,7 @@ const Hero = () => {
           {/* CTA Button */}
           <Button variant="hero" size="lg" className="text-lg px-8 py-6 mt-8">
             QUERO TER MAIS RESULTADOS
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <img src={iconeRosa} alt="" className="ml-2 h-5 w-5" />
           </Button>
         </div>
       </div>
