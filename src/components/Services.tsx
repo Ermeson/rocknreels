@@ -19,7 +19,7 @@ const Services = () => {
       <div className="container mx-auto max-w-6xl">
         {/* Icon Above Title */}
         <div className="flex justify-center mb-8">
-          <img src={iconeRosa} alt="Rock'n'Reels Icon" className="w-24 h-auto md:w-32 md:h-32" />
+          <img src={iconeRosa} alt="Rock'n'Reels Icon" className="w-24 h-auto md:w-32 md:h-auto" />
         </div>
         
         {/* Section Title */}
