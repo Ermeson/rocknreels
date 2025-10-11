@@ -1,32 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { Video, Lightbulb, Package } from "lucide-react";
 import iconeRosa from "@/assets/icone-rosa.png";
-
-const services = [
-  {
-    icon: Video,
-    title: "Vídeos com IA + storytelling de marca",
-    description: "Reels, Shorts, institucionais, endomarketing e treinamentos com clareza, velocidade e impacto.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Consultoria estratégica de conteúdo",
-    description: "Diagnóstico + plano de ação + curadoria de ferramentas. Sua equipe de marketing ganha direção em vez de ficar apagando incêndio.",
-  },
-  {
-    icon: Package,
-    title: "Pacotes mensais de produção",
-    description: "Fluxo contínuo de vídeos, roteiros e direção criativa. Escala e consistência sem burocracia.",
-  },
-];
-
+const services = [{
+  icon: Video,
+  title: "Vídeos com IA + storytelling de marca",
+  description: "Reels, Shorts, institucionais, endomarketing e treinamentos com clareza, velocidade e impacto."
+}, {
+  icon: Lightbulb,
+  title: "Consultoria estratégica de conteúdo",
+  description: "Diagnóstico + plano de ação + curadoria de ferramentas. Sua equipe de marketing ganha direção em vez de ficar apagando incêndio."
+}, {
+  icon: Package,
+  title: "Pacotes mensais de produção",
+  description: "Fluxo contínuo de vídeos, roteiros e direção criativa. Escala e consistência sem burocracia."
+}];
 const Services = () => {
-  return (
-    <section className="py-20 px-4 relative">
+  return <section className="py-20 px-4 relative">
       <div className="container mx-auto max-w-6xl">
         {/* Icon Above Title */}
         <div className="flex justify-center mb-8">
-          <img src={iconeRosa} alt="Rock'n'Reels Icon" className="w-24 h-24 md:w-32 md:h-32" />
+          <img src={iconeRosa} alt="Rock'n'Reels Icon" className="w-24 h-auto md:w-32 md:h-32" />
         </div>
         
         {/* Section Title */}
@@ -44,20 +37,15 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <div
-                key={index}
-                className="bg-card border border-border rounded-lg p-8 hover:border-primary transition-all hover:shadow-glow group"
-              >
+          const Icon = service.icon;
+          return <div key={index} className="bg-card border border-border rounded-lg p-8 hover:border-primary transition-all hover:shadow-glow group">
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-hero mb-6 group-hover:scale-110 transition-transform">
                   <Icon className="h-7 w-7 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-4">{service.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{service.description}</p>
-              </div>
-            );
-          })}
+              </div>;
+        })}
         </div>
         
         {/* CTA */}
@@ -68,8 +56,6 @@ const Services = () => {
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Services;
