@@ -24,6 +24,26 @@ const Hero = () => {
             </span>
           </h1>
           
+          {/* Video Gallery - Infinite Scroll */}
+          <div className="w-full overflow-hidden py-8">
+            <div className="flex gap-6 animate-scroll">
+              {[...Array(8)].map((_, i) => (
+                <div key={i} className="flex-shrink-0">
+                  <iframe
+                    width="320"
+                    height="180"
+                    src="https://www.youtube.com/embed/xvxMa4svO0w"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="rounded-lg shadow-glow"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl font-semibold">
             Vídeos com punch, feitos com IA + direção criativa humana. Comunicação que não trava. Conteúdo que não passa batido.
