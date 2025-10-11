@@ -15,47 +15,50 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-secondary/20 blur-3xl" />
       
       <div className="container mx-auto max-w-6xl relative z-10">
-        <div className="flex flex-col items-center text-center space-y-8 animate-fade-in">
+        <div className="flex flex-col items-center text-center animate-fade-in">
           {/* Logo */}
           <img src={logo} alt="Rock'n'Reels Logo" className="w-44 h-auto mb-4" />
           
           {/* Main Headline */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-8">
             <span className="block mb-2">VÍDEOS NÃO SÃO SOBRE FORMATO.</span>
             <span className="block bg-gradient-hero bg-clip-text text-transparent min-h-[1.2em]">
               {displayedText}
               <span className="animate-pulse">|</span>
             </span>
           </h1>
-          
-          {/* Video Gallery - Infinite Scroll */}
-          <div className="absolute left-0 right-0 w-screen overflow-hidden py-8" style={{ marginLeft: 'calc(-50vw + 50%)' }}>
-            <div className="flex gap-6 animate-scroll">
-              {[...Array(8)].map((_, i) => (
-                <div 
-                  key={i} 
-                  className="flex-shrink-0 cursor-pointer hover:scale-105 transition-transform"
-                  style={{ 
-                    transform: i % 2 === 0 ? 'rotate(-3deg)' : 'rotate(3deg)',
-                    transition: 'transform 0.3s ease'
-                  }}
-                  onClick={() => setIsVideoOpen(true)}
-                >
-                  <iframe
-                    width="320"
-                    height="180"
-                    src="https://www.youtube.com/embed/xvxMa4svO0w"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="rounded-lg shadow-glow pointer-events-none"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
+        </div>
 
+        {/* Video Gallery - Infinite Scroll - Full Width */}
+        <div className="absolute left-0 right-0 w-screen overflow-hidden py-8" style={{ marginLeft: 'calc(-50vw + 50%)', marginTop: '280px' }}>
+          <div className="flex gap-6 animate-scroll">
+            {[...Array(8)].map((_, i) => (
+              <div 
+                key={i} 
+                className="flex-shrink-0 cursor-pointer hover:scale-105 transition-transform"
+                style={{ 
+                  transform: i % 2 === 0 ? 'rotate(-3deg)' : 'rotate(3deg)',
+                  transition: 'transform 0.3s ease'
+                }}
+                onClick={() => setIsVideoOpen(true)}
+              >
+                <iframe
+                  width="320"
+                  height="180"
+                  src="https://www.youtube.com/embed/xvxMa4svO0w"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="rounded-lg shadow-glow pointer-events-none"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Content below carousel */}
+        <div className="flex flex-col items-center text-center space-y-8 relative z-10" style={{ marginTop: '380px' }}>
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl font-semibold">
             Vídeos com punch, feitos com IA + direção criativa humana. Comunicação que não trava. Conteúdo que não passa batido.
