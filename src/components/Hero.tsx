@@ -28,7 +28,14 @@ const Hero = () => {
           <div className="w-full overflow-hidden py-8">
             <div className="flex gap-6 animate-scroll">
               {[...Array(8)].map((_, i) => (
-                <div key={i} className="flex-shrink-0">
+                <div 
+                  key={i} 
+                  className="flex-shrink-0"
+                  style={{ 
+                    transform: i % 2 === 0 ? 'rotate(-3deg)' : 'rotate(3deg)',
+                    transition: 'transform 0.3s ease'
+                  }}
+                >
                   <iframe
                     width="320"
                     height="180"
