@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Gift, Shield, Sparkles } from "lucide-react";
+import { Shield, Sparkles } from "lucide-react";
+import iconeAmarelo from "@/assets/icone-amarelo.png";
 
 const FreeConsultation = () => {
   return (
@@ -9,8 +10,8 @@ const FreeConsultation = () => {
         <div className="bg-gradient-card border-2 border-primary rounded-2xl p-8 md:p-12 shadow-glow">
           <div className="text-center space-y-8">
             {/* Icon */}
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-hero shadow-glow">
-              <Gift className="h-10 w-10 text-white" />
+            <div className="inline-flex items-center justify-center">
+              <img src={iconeAmarelo} alt="Rock'n'Reels" className="w-24 h-24 md:w-28 md:h-28" />
             </div>
             
             {/* Headline */}

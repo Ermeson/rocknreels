@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Video, Lightbulb, Package } from "lucide-react";
+import iconeRosa from "@/assets/icone-rosa.png";
 
 const services = [
   {
@@ -23,6 +24,11 @@ const Services = () => {
   return (
     <section className="py-20 px-4 relative">
       <div className="container mx-auto max-w-6xl">
+        {/* Icon Above Title */}
+        <div className="flex justify-center mb-8">
+          <img src={iconeRosa} alt="Rock'n'Reels Icon" className="w-24 h-24 md:w-32 md:h-32" />
+        </div>
+        
         {/* Section Title */}
         <h2 className="text-3xl md:text-5xl font-black text-center mb-4 leading-tight">
           NOSSA SOLUÇÃO PARA EMPRESAS QUE PRECISAM{" "}
