@@ -29,7 +29,7 @@ const Hero = () => {
           </h1>
           
           {/* Video Gallery - Infinite Scroll */}
-          <div className="w-full overflow-hidden py-8">
+          <div className="absolute left-0 right-0 w-screen overflow-hidden py-8" style={{ marginLeft: 'calc(-50vw + 50%)' }}>
             <div className="flex gap-6 animate-scroll">
               {[...Array(8)].map((_, i) => (
                 <div 
