@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import logo from "@/assets/logo-principal-branca.png";
+import { useTypewriter } from "@/hooks/useTypewriter";
 const Hero = () => {
+  const { displayedText } = useTypewriter("SÃO SOBRE PRESENÇA, POSICIONAMENTO E PODER DE MARCA!", 50);
+  
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
       {/* Gradient Background Effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-secondary/20 blur-3xl" />
@@ -14,8 +17,9 @@ const Hero = () => {
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
             <span className="block mb-2">VÍDEOS NÃO SÃO SOBRE FORMATO.</span>
-            <span className="block bg-gradient-hero bg-clip-text text-transparent">
-              SÃO SOBRE PRESENÇA, POSICIONAMENTO E PODER DE MARCA!
+            <span className="block bg-gradient-hero bg-clip-text text-transparent min-h-[1.2em]">
+              {displayedText}
+              <span className="animate-pulse">|</span>
             </span>
           </h1>
           
