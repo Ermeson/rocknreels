@@ -39,14 +39,14 @@ const Testimonials = () => {
     <section className="py-20 px-4 bg-gradient-card relative">
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
-        <h2 className="text-3xl md:text-5xl font-black text-center mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-center mb-4 px-2">
           O QUE NOSSOS{" "}
           <span className="bg-gradient-hero bg-clip-text text-transparent">
             CLIENTES DIZEM
           </span>
         </h2>
         
-        <p className="text-center text-muted-foreground text-lg mb-16">
+        <p className="text-center text-muted-foreground text-base sm:text-lg mb-16 px-4">
           Resultados reais de quem já transformou sua comunicação
         </p>
         
@@ -57,14 +57,14 @@ const Testimonials = () => {
               key={index} 
               className="bg-background/50 border-border hover:border-primary/50 transition-all hover:shadow-glow"
             >
-              <CardContent className="p-8">
-                <Quote className="h-10 w-10 text-primary mb-4 opacity-50" />
-                <p className="text-foreground/90 mb-6 leading-relaxed italic">
+              <CardContent className="p-6 sm:p-8">
+                <Quote className="h-8 sm:h-10 w-8 sm:w-10 text-primary mb-4 opacity-50" />
+                <p className="text-sm sm:text-base text-foreground/90 mb-6 leading-relaxed italic">
                   "{testimonial.quote}"
                 </p>
                 <div className="border-t border-border pt-4">
-                  <p className="font-bold text-foreground">{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  <p className="text-sm sm:text-base font-bold text-foreground">{testimonial.author}</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.role}</p>
                 </div>
               </CardContent>
             </Card>

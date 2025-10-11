@@ -55,14 +55,14 @@ const Workflow = () => {
     <section className="py-20 px-4 bg-gradient-card relative">
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black mb-4">
+        <div className="text-center mb-16 px-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4">
             NOSSO FLUXO DE{" "}
             <span className="bg-gradient-hero bg-clip-text text-transparent">
               TRABALHO
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
             4 etapas para transformar sua ideia em vídeos que convertem
           </p>
         </div>
@@ -91,19 +91,19 @@ const Workflow = () => {
                   
                   {/* Content */}
                   <div className="flex-1 space-y-4">
-                    <h3 className="text-2xl md:text-3xl font-bold">{step.title}</h3>
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">{step.title}</h3>
                     
                     <ul className="space-y-3">
                       {step.points.map((point, idx) => (
                         <li key={idx} className="flex items-start gap-3">
                           <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                          <span className="text-muted-foreground">{point}</span>
+                          <span className="text-sm sm:text-base text-muted-foreground">{point}</span>
                         </li>
                       ))}
                     </ul>
                     
                     <div className="pt-4 border-t border-border">
-                      <p className="font-semibold text-foreground">{step.deliverable}</p>
+                      <p className="text-sm sm:text-base font-semibold text-foreground">{step.deliverable}</p>
                     </div>
                   </div>
                 </div>

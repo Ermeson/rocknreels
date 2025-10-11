@@ -37,14 +37,14 @@ const FAQ = () => {
     <section className="py-20 px-4 bg-gradient-card relative">
       <div className="container mx-auto max-w-4xl">
         {/* Section Title */}
-        <h2 className="text-3xl md:text-5xl font-black text-center mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-center mb-4 px-2">
           PERGUNTAS{" "}
           <span className="bg-gradient-hero bg-clip-text text-transparent">
             FREQUENTES
           </span>
         </h2>
         
-        <p className="text-center text-muted-foreground text-lg mb-12">
+        <p className="text-center text-muted-foreground text-base sm:text-lg mb-12 px-4">
           Tudo o que você precisa saber antes de começar
         </p>
         
@@ -56,10 +56,10 @@ const FAQ = () => {
               value={`item-${index}`}
               className="bg-background/50 border border-border rounded-lg px-6 hover:border-primary/50 transition-all"
             >
-              <AccordionTrigger className="text-left text-lg font-bold hover:text-primary">
+              <AccordionTrigger className="text-left text-base sm:text-lg font-bold hover:text-primary py-4">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed">
+              <AccordionContent className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

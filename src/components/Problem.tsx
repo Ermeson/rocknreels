@@ -14,7 +14,7 @@ const Problem = () => {
     <section className="py-20 px-4 relative">
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
-        <h2 className="text-3xl md:text-5xl font-black text-center mb-12 leading-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-center mb-12 leading-tight px-2">
           O PROBLEMA NÃO É FALTA DE CONTEÚDO.{" "}
           <span className="text-primary">
             É EXCESSO DE CONTEÚDO QUE NÃO DIZ NADA.
@@ -37,15 +37,16 @@ const Problem = () => {
         </div>
         
         {/* Bottom Text */}
-        <div className="text-center space-y-8">
-          <p className="text-2xl md:text-3xl font-bold text-muted-foreground">
+        <div className="text-center space-y-8 px-2">
+          <p className="text-xl sm:text-2xl md:text-3xl font-bold text-muted-foreground">
             OU SEJA: tempo e dinheiro desperdiçados, campanhas mornas e{" "}
             <span className="text-foreground">uma marca que não é lembrada.</span>
           </p>
           
-          <Button variant="outline" size="lg" className="text-lg">
-            QUERO PARAR DE PERDER RELEVÂNCIA
-            <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto rotate-[15deg]" />
+          <Button variant="outline" size="lg" className="text-base sm:text-lg px-4 sm:px-8">
+            <span className="hidden sm:inline">QUERO PARAR DE PERDER RELEVÂNCIA</span>
+            <span className="sm:hidden">QUERO RELEVÂNCIA</span>
+            <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
           </Button>
         </div>
       </div>

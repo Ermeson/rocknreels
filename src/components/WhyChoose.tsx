@@ -35,7 +35,7 @@ const WhyChoose = () => {
     <section className="py-20 px-4 relative">
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
-        <h2 className="text-3xl md:text-5xl font-black text-center mb-16 leading-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-center mb-16 leading-tight px-2">
           POR QUE A{" "}
           <span className="bg-gradient-hero bg-clip-text text-transparent">
             ROCK'N REELS
@@ -64,9 +64,10 @@ const WhyChoose = () => {
         
         {/* CTA */}
         <div className="text-center">
-          <Button variant="hero" size="lg" className="text-lg">
-            QUERO ESCOLHER A ROCK'N REELS
-            <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto rotate-[15deg]" />
+          <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8">
+            <span className="hidden sm:inline">QUERO ESCOLHER A ROCK'N REELS</span>
+            <span className="sm:hidden">QUERO A ROCK'N REELS</span>
+            <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
           </Button>
         </div>
       </div>

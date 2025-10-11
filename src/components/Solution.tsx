@@ -7,15 +7,15 @@ const Solution = () => {
     <section className="py-20 px-4 bg-gradient-card relative">
       <div className="container mx-auto max-w-6xl">
         {/* Main Title */}
-        <div className="text-center mb-16 space-y-6">
-          <h2 className="text-3xl md:text-5xl font-black leading-tight">
+        <div className="text-center mb-16 space-y-6 px-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-tight">
             <span className="block mb-2">COMUNICAÇÃO QUE NÃO TRAVA.</span>
             <span className="bg-gradient-hero bg-clip-text text-transparent">
               CONTEÚDO QUE NÃO PASSA BATIDO.
             </span>
           </h2>
           
-          <p className="text-xl md:text-2xl text-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-foreground max-w-4xl mx-auto leading-relaxed px-2">
             A Rock'n'Reels existe para destravar a voz da sua marca. 
             Usamos IA para acelerar, mas quem dá o tom é a direção criativa humana.
           </p>
@@ -55,14 +55,15 @@ const Solution = () => {
         </div>
         
         {/* Mission Statement */}
-        <div className="text-center space-y-8">
-          <p className="text-xl md:text-2xl font-semibold text-foreground/90">
+        <div className="text-center space-y-8 px-2">
+          <p className="text-lg sm:text-xl md:text-2xl font-semibold text-foreground/90">
             Nossa missão é descomplicar vídeos, acelerar marcas e comunicar com verdade.
           </p>
           
-          <Button variant="secondary" size="lg" className="text-lg">
-            QUERO ACELERAR MINHA COMUNICAÇÃO
-            <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto rotate-[15deg]" />
+          <Button variant="secondary" size="lg" className="text-base sm:text-lg px-4 sm:px-8">
+            <span className="hidden sm:inline">QUERO ACELERAR MINHA COMUNICAÇÃO</span>
+            <span className="sm:hidden">QUERO ACELERAR</span>
+            <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
           </Button>
         </div>
       </div>

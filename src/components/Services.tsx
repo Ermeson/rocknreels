@@ -23,14 +23,14 @@ const Services = () => {
         </div>
         
         {/* Section Title */}
-        <h2 className="text-3xl md:text-5xl font-black text-center mb-4 leading-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-center mb-4 leading-tight px-2">
           NOSSA SOLUÇÃO PARA EMPRESAS QUE PRECISAM{" "}
           <span className="bg-gradient-hero bg-clip-text text-transparent">
             APARECER COM INTENÇÃO
           </span>
         </h2>
         
-        <p className="text-center text-muted-foreground text-lg mb-16">
+        <p className="text-center text-muted-foreground text-base sm:text-lg mb-16 px-4">
           Três pilares fundamentais para transformar sua comunicação
         </p>
         
@@ -50,9 +50,9 @@ const Services = () => {
         
         {/* CTA */}
         <div className="text-center">
-          <Button variant="default" size="lg" className="text-lg">
+          <Button variant="default" size="lg" className="text-base sm:text-lg px-6 sm:px-8">
             ENTRAR EM CONTATO
-            <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto rotate-[15deg]" />
+            <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
           </Button>
         </div>
       </div>

@@ -16,7 +16,7 @@ const FreeConsultation = () => {
             </div>
             
             {/* Headline */}
-            <h2 className="text-3xl md:text-5xl font-black leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-tight px-2">
               GARANTA A SUA{" "}
               <span className="bg-gradient-hero bg-clip-text text-transparent">
                 CONSULTORIA GRATUITA!
@@ -24,42 +24,43 @@ const FreeConsultation = () => {
             </h2>
             
             {/* Description */}
-            <p className="text-xl text-foreground/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-foreground/90 max-w-3xl mx-auto leading-relaxed px-2">
               Sim, você tem direito a uma consultoria gratuita de 30 minutos! Você sai da conversa com insights práticos e um plano de ação inicial. Sem enrolação, sem blá-blá-blá. Só o que sua marca precisa ouvir para realmente ter resultados.
             </p>
             
             {/* Bonus Section */}
-            <div className="bg-secondary/20 border border-secondary rounded-lg p-6 max-w-2xl mx-auto">
-              <div className="flex items-center justify-center gap-3 mb-3">
-                <Sparkles className="h-6 w-6 text-secondary" />
-                <h3 className="text-xl font-bold text-foreground">BÔNUS EXCLUSIVO PARA QUEM MARCAR HOJE:</h3>
+            <div className="bg-secondary/20 border border-secondary rounded-lg p-4 sm:p-6 max-w-2xl mx-auto">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-3">
+                <Sparkles className="h-6 w-6 text-secondary flex-shrink-0" />
+                <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground text-center">BÔNUS EXCLUSIVO PARA QUEM MARCAR HOJE:</h3>
               </div>
-              <p className="text-lg text-foreground">
+              <p className="text-sm sm:text-base md:text-lg text-foreground text-center">
                 Análise gratuita de até 3 vídeos da sua marca, com feedback prático e direto.
               </p>
             </div>
             
             {/* CTA Button */}
-            <Button variant="hero" size="lg" className="text-lg px-10 py-7 text-xl">
-              AGENDAR MINHA CONSULTORIA GRATUITA
-              <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto rotate-[15deg]" />
+            <Button variant="hero" size="lg" className="text-base sm:text-lg md:text-xl px-6 sm:px-10 py-5 sm:py-7">
+              <span className="hidden md:inline">AGENDAR MINHA CONSULTORIA GRATUITA</span>
+              <span className="md:hidden">AGENDAR CONSULTORIA</span>
+              <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
             </Button>
             
             {/* Zero Risk Section */}
-            <div className="pt-8 border-t border-border/50">
+            <div className="pt-8 border-t border-border/50 px-2">
               <div className="flex items-center justify-center gap-3 mb-4">
-                <Shield className="h-8 w-8 text-primary" />
-                <h3 className="text-2xl font-bold">ZERO RISCO. 100% IMPACTO.</h3>
+                <Shield className="h-6 sm:h-8 w-6 sm:w-8 text-primary flex-shrink-0" />
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-center">ZERO RISCO. 100% IMPACTO.</h3>
               </div>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
                 Se a primeira conversa não abrir seus olhos para uma comunicação mais ágil, seguimos amigos. Se abrir, você nunca mais vai olhar para vídeo da mesma forma.
               </p>
             </div>
             
             {/* Secondary CTA */}
-            <Button variant="secondary" size="lg" className="text-lg">
+            <Button variant="secondary" size="lg" className="text-base sm:text-lg px-8 sm:px-10">
               EU QUERO
-              <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto rotate-[15deg]" />
+              <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
             </Button>
           </div>
         </div>

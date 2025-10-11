@@ -8,6 +8,7 @@ import Testimonials from "@/components/Testimonials";
 import FreeConsultation from "@/components/FreeConsultation";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
+import FloatingActionButton from "@/components/FloatingActionButton";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       <FreeConsultation />
       <FAQ />
       <FinalCTA />
+      <FloatingActionButton />
     </main>
   );
 };

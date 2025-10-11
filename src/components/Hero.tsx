@@ -19,7 +19,7 @@ const Hero = () => {
           <img src={logo} alt="Rock'n'Reels Logo" className="w-44 h-auto mb-4" />
           
           {/* Main Headline */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight px-2">
             <span className="block mb-2">VÍDEOS NÃO SÃO SOBRE FORMATO.</span>
             <span className="block bg-gradient-hero bg-clip-text text-transparent min-h-[1.2em]">
               {displayedText}
@@ -40,19 +40,20 @@ const Hero = () => {
           </div>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl font-semibold">
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl font-semibold px-4">
             Vídeos com punch, feitos com IA + direção criativa humana. Comunicação que não trava. Conteúdo que não passa batido.
           </p>
           
-          <p className="text-lg md:text-xl text-foreground/80 max-w-2xl">
+          <p className="text-base sm:text-lg md:text-xl text-foreground/80 max-w-2xl px-4">
             Chega de gastar rios de dinheiro com estúdios, prazos eternos e campanhas que ninguém lembra. 
             Nós fazemos sua marca aparecer, impactar e converter.
           </p>
           
           {/* CTA Button */}
-          <Button variant="hero" size="lg" className="text-lg px-8 py-6 mt-8">
-            QUERO TER MAIS RESULTADOS
-            <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto rotate-[15deg]" />
+          <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 mt-8">
+            <span className="hidden sm:inline">QUERO TER MAIS RESULTADOS</span>
+            <span className="sm:hidden">QUERO RESULTADOS</span>
+            <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
           </Button>
         </div>
       </div>
