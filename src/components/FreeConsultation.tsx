@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Sparkles } from "lucide-react";
 import iconeAmarelo from "@/assets/icone-amarelo.png";
+import iconeRosa from "@/assets/icone-rosa.png";
 
 const FreeConsultation = () => {
   return (
@@ -41,6 +42,7 @@ const FreeConsultation = () => {
             {/* CTA Button */}
             <Button variant="hero" size="lg" className="text-lg px-10 py-7 text-xl">
               AGENDAR MINHA CONSULTORIA GRATUITA
+              <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto" />
             </Button>
             
             {/* Zero Risk Section */}
@@ -57,6 +59,7 @@ const FreeConsultation = () => {
             {/* Secondary CTA */}
             <Button variant="secondary" size="lg" className="text-lg">
               EU QUERO
+              <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto" />
             </Button>
           </div>
         </div>

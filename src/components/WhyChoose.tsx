@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Zap, Cpu, Eye, TrendingUp, Users } from "lucide-react";
+import iconeRosa from "@/assets/icone-rosa.png";
 
 const benefits = [
   {
@@ -65,6 +66,7 @@ const WhyChoose = () => {
         <div className="text-center">
           <Button variant="hero" size="lg" className="text-lg">
             QUERO ESCOLHER A ROCK'N REELS
+            <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto" />
           </Button>
         </div>
       </div>

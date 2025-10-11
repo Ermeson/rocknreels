@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Zap, Target, MessageCircle } from "lucide-react";
+import iconeRosa from "@/assets/icone-rosa.png";
 
 const Solution = () => {
   return (
@@ -61,6 +62,7 @@ const Solution = () => {
           
           <Button variant="secondary" size="lg" className="text-lg">
             QUERO ACELERAR MINHA COMUNICAÇÃO
+            <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto" />
           </Button>
         </div>
       </div>

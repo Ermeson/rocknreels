@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { AlertCircle } from "lucide-react";
+import iconeRosa from "@/assets/icone-rosa.png";
 
 const problems = [
   "Equipe presa em aprovações intermináveis que matam a velocidade.",
@@ -44,6 +45,7 @@ const Problem = () => {
           
           <Button variant="outline" size="lg" className="text-lg">
             QUERO PARAR DE PERDER RELEVÂNCIA
+            <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto" />
           </Button>
         </div>
       </div>

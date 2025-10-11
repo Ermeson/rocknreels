@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import iconeRosa from "@/assets/icone-rosa.png";
 
 const FinalCTA = () => {
   return (
@@ -31,7 +31,7 @@ const FinalCTA = () => {
           <div className="pt-8">
             <Button variant="hero" size="lg" className="text-xl px-12 py-8">
               ENTRAR EM CONTATO AGORA
-              <ArrowRight className="ml-3 h-6 w-6" />
+              <img src={iconeRosa} alt="" className="ml-3 w-8 h-auto" />
             </Button>
           </div>
         </div>
