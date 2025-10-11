@@ -1,11 +1,15 @@
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import logo from "@/assets/logo-principal-branca.png";
 import iconeRosa from "@/assets/icone-rosa.png";
 import { useTypewriter } from "@/hooks/useTypewriter";
+import { useState } from "react";
 const Hero = () => {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
   const {
     displayedText
   } = useTypewriter("SÃO SOBRE PRESENÇA, POSICIONAMENTO E PODER DE MARCA!", 50);
+  
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
       {/* Gradient Background Effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-secondary/20 blur-3xl" />
@@ -30,11 +34,12 @@ const Hero = () => {
               {[...Array(8)].map((_, i) => (
                 <div 
                   key={i} 
-                  className="flex-shrink-0"
+                  className="flex-shrink-0 cursor-pointer hover:scale-105 transition-transform"
                   style={{ 
                     transform: i % 2 === 0 ? 'rotate(-3deg)' : 'rotate(3deg)',
                     transition: 'transform 0.3s ease'
                   }}
+                  onClick={() => setIsVideoOpen(true)}
                 >
                   <iframe
                     width="320"
@@ -44,7 +49,7 @@ const Hero = () => {
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    className="rounded-lg shadow-glow"
+                    className="rounded-lg shadow-glow pointer-events-none"
                   />
                 </div>
               ))}
@@ -71,6 +76,24 @@ const Hero = () => {
       
       {/* Bottom Gradient Fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      
+      {/* Video Modal */}
+      <Dialog open={isVideoOpen} onOpenChange={setIsVideoOpen}>
+        <DialogContent className="max-w-4xl p-0 border-2 border-primary shadow-[0_0_50px_rgba(255,20,147,0.6)] bg-card">
+          <div className="relative w-full aspect-video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/xvxMa4svO0w?autoplay=1"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="rounded-lg"
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>;
 };
 export default Hero;
