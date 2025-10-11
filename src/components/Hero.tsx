@@ -3,8 +3,9 @@ import logo from "@/assets/logo-principal-branca.png";
 import iconeRosa from "@/assets/icone-rosa.png";
 import { useTypewriter } from "@/hooks/useTypewriter";
 const Hero = () => {
-  const { displayedText } = useTypewriter("SÃO SOBRE PRESENÇA, POSICIONAMENTO E PODER DE MARCA!", 50);
-  
+  const {
+    displayedText
+  } = useTypewriter("SÃO SOBRE PRESENÇA, POSICIONAMENTO E PODER DE MARCA!", 50);
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
       {/* Gradient Background Effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-secondary/20 blur-3xl" />
@@ -36,7 +37,7 @@ const Hero = () => {
           {/* CTA Button */}
           <Button variant="hero" size="lg" className="text-lg px-8 py-6 mt-8">
             QUERO TER MAIS RESULTADOS
-            <img src={iconeRosa} alt="" className="ml-2 h-5 w-5" />
+            <img src={iconeRosa} alt="" className="ml-2 w-8 h-auto" />
           </Button>
         </div>
       </div>
