@@ -40,11 +40,13 @@ const FreeConsultation = () => {
             </div>
             
             {/* CTA Button */}
-            <Button variant="hero" size="lg" className="text-base sm:text-lg md:text-xl px-6 sm:px-10 py-5 sm:py-7">
-              <span className="hidden md:inline">AGENDAR MINHA CONSULTORIA GRATUITA</span>
-              <span className="md:hidden">AGENDAR CONSULTORIA</span>
-              <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
-            </Button>
+            <a href="https://wa.me/5521979564294" target="_blank" rel="noopener noreferrer">
+              <Button variant="hero" size="lg" className="text-base sm:text-lg md:text-xl px-6 sm:px-10 py-5 sm:py-7">
+                <span className="hidden md:inline">AGENDAR MINHA CONSULTORIA GRATUITA</span>
+                <span className="md:hidden">AGENDAR CONSULTORIA</span>
+                <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
+              </Button>
+            </a>
             
             {/* Zero Risk Section */}
             <div className="pt-8 border-t border-border/50 px-2">
@@ -58,10 +60,12 @@ const FreeConsultation = () => {
             </div>
             
             {/* Secondary CTA */}
-            <Button variant="secondary" size="lg" className="text-base sm:text-lg px-8 sm:px-10">
-              EU QUERO
-              <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
-            </Button>
+            <a href="https://wa.me/5521979564294" target="_blank" rel="noopener noreferrer">
+              <Button variant="secondary" size="lg" className="text-base sm:text-lg px-8 sm:px-10">
+                EU QUERO
+                <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
+              </Button>
+            </a>
           </div>
         </div>
       </div>

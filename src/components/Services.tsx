@@ -50,10 +50,12 @@ const Services = () => {
         
         {/* CTA */}
         <div className="text-center">
-          <Button variant="default" size="lg" className="text-base sm:text-lg px-6 sm:px-8">
-            ENTRAR EM CONTATO
-            <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
-          </Button>
+          <a href="https://wa.me/5521979564294" target="_blank" rel="noopener noreferrer">
+            <Button variant="default" size="lg" className="text-base sm:text-lg px-6 sm:px-8">
+              ENTRAR EM CONTATO
+              <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
+            </Button>
+          </a>
         </div>
       </div>
     </section>;

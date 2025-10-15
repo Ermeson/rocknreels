@@ -60,11 +60,13 @@ const Solution = () => {
             Nossa missão é descomplicar vídeos, acelerar marcas e comunicar com verdade.
           </p>
           
-          <Button variant="secondary" size="lg" className="text-base sm:text-lg px-4 sm:px-8">
-            <span className="hidden sm:inline">QUERO ACELERAR MINHA COMUNICAÇÃO</span>
-            <span className="sm:hidden">QUERO ACELERAR</span>
-            <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
-          </Button>
+          <a href="https://wa.me/5521979564294" target="_blank" rel="noopener noreferrer">
+            <Button variant="secondary" size="lg" className="text-base sm:text-lg px-4 sm:px-8">
+              <span className="hidden sm:inline">QUERO ACELERAR MINHA COMUNICAÇÃO</span>
+              <span className="sm:hidden">QUERO ACELERAR</span>
+              <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
+            </Button>
+          </a>
         </div>
       </div>
     </section>

@@ -64,11 +64,13 @@ const WhyChoose = () => {
         
         {/* CTA */}
         <div className="text-center">
-          <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8">
-            <span className="hidden sm:inline">QUERO ESCOLHER A ROCK'N REELS</span>
-            <span className="sm:hidden">QUERO A ROCK'N REELS</span>
-            <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
-          </Button>
+          <a href="https://wa.me/5521979564294" target="_blank" rel="noopener noreferrer">
+            <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8">
+              <span className="hidden sm:inline">QUERO ESCOLHER A ROCK'N REELS</span>
+              <span className="sm:hidden">QUERO A ROCK'N REELS</span>
+              <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
+            </Button>
+          </a>
         </div>
       </div>
     </section>

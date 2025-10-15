@@ -19,25 +19,23 @@ const FloatingActionButton = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
-    <button
-      onClick={scrollToTop}
+    <a
+      href="https://wa.me/5521979564294"
+      target="_blank"
+      rel="noopener noreferrer"
       className={`fixed bottom-6 right-6 z-50 transition-all duration-300 ${
         isVisible
           ? "opacity-100 translate-y-0"
           : "opacity-0 translate-y-16 pointer-events-none"
       }`}
-      aria-label="Scroll to top"
+      aria-label="Contact on WhatsApp"
     >
       <Button variant="hero" size="lg" className="shadow-2xl text-base md:text-lg px-6 md:px-8">
         QUERO TER MAIS RESULTADOS
         <img src={iconeRosa} alt="" className="ml-2 w-6 md:w-8 h-auto rotate-[15deg]" />
       </Button>
-    </button>
+    </a>
   );
 };
 

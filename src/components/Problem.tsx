@@ -43,11 +43,13 @@ const Problem = () => {
             <span className="text-foreground">uma marca que não é lembrada.</span>
           </p>
           
-          <Button variant="outline" size="lg" className="text-base sm:text-lg px-4 sm:px-8">
-            <span className="hidden sm:inline">QUERO PARAR DE PERDER RELEVÂNCIA</span>
-            <span className="sm:hidden">QUERO RELEVÂNCIA</span>
-            <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
-          </Button>
+          <a href="https://wa.me/5521979564294" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" size="lg" className="text-base sm:text-lg px-4 sm:px-8">
+              <span className="hidden sm:inline">QUERO PARAR DE PERDER RELEVÂNCIA</span>
+              <span className="sm:hidden">QUERO RELEVÂNCIA</span>
+              <img src={iconeRosa} alt="" className="ml-2 w-6 sm:w-8 h-auto rotate-[15deg]" />
+            </Button>
+          </a>
         </div>
       </div>
     </section>
