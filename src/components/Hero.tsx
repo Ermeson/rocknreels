@@ -5,7 +5,8 @@ import iconeRosa from "@/assets/icone-rosa.png";
 import { useState } from "react";
 const Hero = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
       {/* Gradient Background Effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-secondary/20 blur-3xl" />
 
@@ -25,19 +26,38 @@ const Hero = () => {
           {/* Video Gallery - Infinite Scroll */}
           <div className="w-full overflow-hidden py-8">
             <div className="flex gap-6 animate-scroll">
-              {[...Array(8)].map((_, i) => <div key={i} className="flex-shrink-0 cursor-pointer hover:scale-105 transition-transform" style={{
-              transform: i % 2 === 0 ? "rotate(-3deg)" : "rotate(3deg)",
-              transition: "transform 0.3s ease"
-            }} onClick={() => setIsVideoOpen(true)}>
-                  <iframe width="320" height="180" src="https://www.youtube.com/embed/xvxMa4svO0w" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="rounded-lg shadow-glow pointer-events-none" />
-                </div>)}
+              {[...Array(8)].map((_, i) => (
+                <div
+                  key={i}
+                  className="flex-shrink-0 cursor-pointer hover:scale-105 transition-transform"
+                  style={{
+                    transform: i % 2 === 0 ? "rotate(-3deg)" : "rotate(3deg)",
+                    transition: "transform 0.3s ease",
+                  }}
+                  onClick={() => setIsVideoOpen(true)}
+                >
+                  <iframe
+                    width="320"
+                    height="180"
+                    src="https://www.youtube.com/embed/xvxMa4svO0w"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="rounded-lg shadow-glow pointer-events-none"
+                  />
+                </div>
+              ))}
             </div>
           </div>
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl font-semibold px-4">
-            Vídeos com punch, feitos com IA + direção criativa humana. Comunicação que não trava. Conteúdo que não passa
-            batido.
+            Vídeos com punch, feitos com IA + direção criativa humana.
+          </p>
+
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl font-semibold px-4">
+            Comunicação que não trava. Conteúdo que não passa batido.
           </p>
 
           <p className="text-base sm:text-lg md:text-xl text-foreground/80 max-w-2xl px-4">
@@ -61,10 +81,20 @@ const Hero = () => {
       <Dialog open={isVideoOpen} onOpenChange={setIsVideoOpen}>
         <DialogContent className="max-w-4xl p-0 border-2 border-primary shadow-[0_0_50px_rgba(255,20,147,0.6)] bg-card">
           <div className="relative w-full aspect-video">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xvxMa4svO0w?autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="rounded-lg" />
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/xvxMa4svO0w?autoplay=1"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="rounded-lg"
+            />
           </div>
         </DialogContent>
       </Dialog>
-    </section>;
+    </section>
+  );
 };
 export default Hero;
