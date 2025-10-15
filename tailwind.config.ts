@@ -14,7 +14,7 @@ export default {
     },
     fontFamily: {
       sans: ['Montserrat', 'sans-serif'],
-      heading: ['BBH Sans Hegarty', 'Montserrat', 'sans-serif'],
+      heading: ['Bowlby One', 'Montserrat', 'sans-serif'],
     },
     extend: {
       colors: {
