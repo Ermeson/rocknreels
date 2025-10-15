@@ -2,11 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import logo from "@/assets/logo-principal-branca.png";
 import iconeRosa from "@/assets/icone-rosa.png";
-import { useTypewriter } from "@/hooks/useTypewriter";
 import { useState } from "react";
 const Hero = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
-  const { displayedText } = useTypewriter("SÃO SOBRE PRESENÇA, POSICIONAMENTO E PODER DE MARCA!", 50);
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
       {/* Gradient Background Effect */}
@@ -20,9 +18,8 @@ const Hero = () => {
           {/* Main Headline */}
           <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight px-2">
             <span className="block mb-2">VÍDEOS NÃO SÃO SOBRE FORMATO.</span>
-            <span className="block bg-gradient-hero bg-clip-text text-transparent min-h-[1.2em]">
-              {displayedText}
-              <span className="animate-pulse">|</span>
+            <span className="block bg-gradient-hero bg-clip-text text-transparent">
+              SÃO SOBRE PRESENÇA, POSICIONAMENTO E PODER DE MARCA!
             </span>
           </h1>
 
