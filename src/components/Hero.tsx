@@ -62,7 +62,7 @@ const Hero = () => {
 
           <p className="text-base sm:text-lg md:text-xl text-foreground/80 max-w-2xl px-4">
             Chega de gastar rios de dinheiro com estúdios, prazos eternos e campanhas que ninguém lembra. Nós fazemos
-            sua marca aparecer, impactar e converter.
+            sua marca <span className="font-bold">aparecer, impactar e converter</span>.
           </p>
 
           {/* CTA Button */}
