@@ -19,7 +19,7 @@ const Hero = () => {
           <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight px-2">
             <span className="block mb-2">VÍDEOS NÃO SÃO SOBRE FORMATO.</span>
             <span className="block bg-gradient-hero bg-clip-text text-transparent">
-              SÃO SOBRE PRESENÇA, POSICIONAMENTO E PODER DE MARCA!
+              São sobre presença, posicionamento e poder de marca!
             </span>
           </h1>
 
