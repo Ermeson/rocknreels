@@ -23,7 +23,7 @@ const Services = () => {
         </div>
         
         {/* Section Title */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-center mb-4 leading-tight px-2">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 leading-tight px-2">
           NOSSA SOLUÇÃO PARA EMPRESAS QUE PRECISAM{" "}
           <span className="bg-gradient-hero bg-clip-text text-transparent">
             APARECER COM INTENÇÃO
@@ -42,7 +42,7 @@ const Services = () => {
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-hero mb-6 group-hover:scale-110 transition-transform">
                   <Icon className="h-7 w-7 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-4">{service.title}</h3>
+                <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{service.description}</p>
               </div>;
         })}

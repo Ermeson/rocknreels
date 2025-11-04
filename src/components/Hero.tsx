@@ -16,7 +16,7 @@ const Hero = () => {
           <img src={logo} alt="Rock'n'Reels Logo" className="w-44 h-auto mb-4" />
 
           {/* Main Headline */}
-          <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight px-2">
+          <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight px-2">
             <span className="block mb-2 tracking-tighter">VÍDEOS NÃO SÃO SOBRE FORMATO.</span>
             <span className="block bg-gradient-hero bg-clip-text text-transparent tracking-tighter">
               São sobre presença, posicionamento e poder de marca!
@@ -62,7 +62,7 @@ const Hero = () => {
 
           <p className="text-base sm:text-lg md:text-xl text-foreground/80 max-w-2xl px-4">
             Chega de gastar rios de dinheiro com estúdios, prazos eternos e campanhas que ninguém lembra. Nós fazemos
-            sua marca <span className="font-bold">aparecer, impactar e converter</span>.
+            sua marca <span className="font-semibold">aparecer, impactar e converter</span>.
           </p>
 
           {/* CTA Button */}

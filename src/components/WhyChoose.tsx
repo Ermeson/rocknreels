@@ -35,7 +35,7 @@ const WhyChoose = () => {
     <section className="py-20 px-4 relative">
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-center mb-16 leading-tight px-2">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 leading-tight px-2">
           POR QUE A{" "}
           <span className="bg-gradient-hero bg-clip-text text-transparent">
             ROCK'N REELS
@@ -55,7 +55,7 @@ const WhyChoose = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/20 mb-4 group-hover:bg-primary/30 transition-colors">
                   <Icon className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
+                <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
                 <p className="text-muted-foreground">{benefit.description}</p>
               </div>
             );

@@ -16,7 +16,7 @@ const FreeConsultation = () => {
             </div>
             
             {/* Headline */}
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-tight px-2">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight px-2">
               GARANTA A SUA{" "}
               <span className="bg-gradient-hero bg-clip-text text-transparent">
                 CONSULTORIA GRATUITA!
@@ -32,7 +32,7 @@ const FreeConsultation = () => {
             <div className="bg-secondary/20 border border-secondary rounded-lg p-4 sm:p-6 max-w-2xl mx-auto">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-3">
                 <Sparkles className="h-6 w-6 text-secondary flex-shrink-0" />
-                <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground text-center">BÔNUS EXCLUSIVO PARA QUEM MARCAR HOJE:</h3>
+                <h3 className="text-base sm:text-lg md:text-xl font-semibold text-foreground text-center">BÔNUS EXCLUSIVO PARA QUEM MARCAR HOJE:</h3>
               </div>
               <p className="text-sm sm:text-base md:text-lg text-foreground text-center">
                 Análise gratuita de até 3 vídeos da sua marca, com feedback prático e direto.
@@ -52,7 +52,7 @@ const FreeConsultation = () => {
             <div className="pt-8 border-t border-border/50 px-2">
               <div className="flex items-center justify-center gap-3 mb-4">
                 <Shield className="h-6 sm:h-8 w-6 sm:w-8 text-primary flex-shrink-0" />
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-center">ZERO RISCO. 100% IMPACTO.</h3>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-center">ZERO RISCO. 100% IMPACTO.</h3>
               </div>
               <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
                 Se a primeira conversa não abrir seus olhos para uma comunicação mais ágil, seguimos amigos. Se abrir, você nunca mais vai olhar para vídeo da mesma forma.

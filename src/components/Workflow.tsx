@@ -56,7 +56,7 @@ const Workflow = () => {
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
         <div className="text-center mb-16 px-2">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             NOSSO FLUXO DE{" "}
             <span className="bg-gradient-hero bg-clip-text text-transparent">
               TRABALHO
@@ -91,7 +91,7 @@ const Workflow = () => {
                   
                   {/* Content */}
                   <div className="flex-1 space-y-4">
-                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">{step.title}</h3>
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold">{step.title}</h3>
                     
                     <ul className="space-y-3">
                       {step.points.map((point, idx) => (

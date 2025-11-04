@@ -14,7 +14,7 @@ const Problem = () => {
     <section className="py-20 px-4 relative">
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-center mb-12 leading-tight px-2">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 leading-tight px-2">
           O PROBLEMA NÃO É FALTA DE CONTEÚDO.{" "}
           <span className="text-primary">
             É EXCESSO DE CONTEÚDO QUE NÃO DIZ NADA.
@@ -38,7 +38,7 @@ const Problem = () => {
         
         {/* Bottom Text */}
         <div className="text-center space-y-8 px-2">
-          <p className="text-xl sm:text-2xl md:text-3xl font-bold text-muted-foreground">
+          <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-muted-foreground">
             OU SEJA: tempo e dinheiro desperdiçados, campanhas mornas e{" "}
             <span className="text-foreground">uma marca que não é lembrada.</span>
           </p>

@@ -8,7 +8,7 @@ const Solution = () => {
       <div className="container mx-auto max-w-6xl">
         {/* Main Title */}
         <div className="text-center mb-16 space-y-6 px-2">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             <span className="block mb-2">COMUNICAÇÃO QUE NÃO TRAVA.</span>
             <span className="bg-gradient-hero bg-clip-text text-transparent">
               CONTEÚDO QUE NÃO PASSA BATIDO.
@@ -27,7 +27,7 @@ const Solution = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/20 mb-4">
               <Zap className="h-8 w-8 text-primary" />
             </div>
-            <h3 className="text-xl font-bold">Nada de vídeos genéricos</h3>
+            <h3 className="text-xl font-semibold">Nada de vídeos genéricos</h3>
             <p className="text-muted-foreground">
               Cada frame é pensado estrategicamente para sua marca
             </p>
@@ -37,7 +37,7 @@ const Solution = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary/20 mb-4">
               <Target className="h-8 w-8 text-secondary" />
             </div>
-            <h3 className="text-xl font-bold">Nada de "padrãozinho" de agência</h3>
+            <h3 className="text-xl font-semibold">Nada de "padrãozinho" de agência</h3>
             <p className="text-muted-foreground">
               Autenticidade e personalidade em cada entrega
             </p>
@@ -47,7 +47,7 @@ const Solution = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/20 mb-4">
               <MessageCircle className="h-8 w-8 text-primary" />
             </div>
-            <h3 className="text-xl font-bold">Comunicação com verdade</h3>
+            <h3 className="text-xl font-semibold">Comunicação com verdade</h3>
             <p className="text-muted-foreground">
               Descomplicar vídeos e acelerar marcas
             </p>

@@ -39,7 +39,7 @@ const Testimonials = () => {
     <section className="py-20 px-4 bg-gradient-card relative">
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-center mb-4 px-2">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 px-2">
           O QUE NOSSOS{" "}
           <span className="bg-gradient-hero bg-clip-text text-transparent">
             CLIENTES DIZEM
@@ -63,7 +63,7 @@ const Testimonials = () => {
                   "{testimonial.quote}"
                 </p>
                 <div className="border-t border-border pt-4">
-                  <p className="text-sm sm:text-base font-bold text-foreground">{testimonial.author}</p>
+                  <p className="text-sm sm:text-base font-semibold text-foreground">{testimonial.author}</p>
                   <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.role}</p>
                 </div>
               </CardContent>

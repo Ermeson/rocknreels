@@ -10,7 +10,7 @@ const FinalCTA = () => {
       <div className="container mx-auto max-w-5xl relative z-10">
         <div className="text-center space-y-8">
           {/* Main Statement */}
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight px-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight px-2">
             <span className="block mb-4">
               OU SUA MARCA FALA COM{" "}
               <span className="bg-gradient-hero bg-clip-text text-transparent">
